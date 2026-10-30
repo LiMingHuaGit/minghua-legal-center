@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Better Excalidraw Workspace Chrome extension published by MingHua Li.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://legal.liminghua.fyi/products/better-excalidraw/privacy/">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+  <title>Better Excalidraw Workspace Privacy Policy — MingHua Li</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content / 跳到正文</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" data-keep-language>MingHua Li · Legal Center</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="/privacy/" data-keep-language>Privacy</a>
+          <a href="/support/" data-keep-language>Support</a>
+          <div class="language-switch" role="group" aria-label="Language / 语言">
+            <button type="button" data-language-choice="en" aria-pressed="true">EN</button><span class="language-separator" aria-hidden="true">/</span><button type="button" data-language-choice="zh" aria-pressed="false">中文</button>
+          </div>
+        </nav>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
+            <a href="/privacy/" data-keep-language>Privacy / 隐私政策</a>
+            <a href="/support/" data-keep-language>Support / 支持</a>
+            <div class="language-switch" role="group" aria-label="Language / 语言">
+              <button type="button" data-language-choice="en" aria-pressed="true">EN</button><span class="language-separator" aria-hidden="true">/</span><button type="button" data-language-choice="zh" aria-pressed="false">中文</button>
+            </div>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="main" class="page-main" tabindex="-1">
+      <section class="document-hero">
+        <div class="document-hero-inner">
+          <div class="lang-en">
+            <h1>Better Excalidraw Workspace Privacy Policy</h1>
+            <div class="document-meta"><span>Effective 30 October 2026</span><span>Publisher: MingHua Li（李明华）</span><span>Chrome extension</span></div>
+          </div>
+          <div class="lang-zh" lang="zh-Hans">
+            <h1>Better Excalidraw Workspace 隐私政策</h1>
+            <div class="document-meta"><span>2026 年 10 月 30 日生效</span><span>发布者：MingHua Li（李明华）</span><span>Chrome 扩展</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="document-layout">
+        <aside class="document-toc" aria-label="Page contents">
+          <div class="lang-en">
+            <strong>Contents</strong>
+            <a href="#overview-en">Overview</a>
+            <a href="#local-data-en">Local data</a>
+            <a href="#permissions-en">Permissions</a>
+            <a href="#sharing-en">Collection and sharing</a>
+            <a href="#choices-en">Retention and choices</a>
+            <a href="#contact-en">Contact</a>
+          </div>
+          <div class="lang-zh" lang="zh-Hans">
+            <strong>目录</strong>
+            <a href="#overview-zh">概述</a>
+            <a href="#local-data-zh">本地数据</a>
+            <a href="#permissions-zh">权限用途</a>
+            <a href="#sharing-zh">收集与共享</a>
+            <a href="#choices-zh">保留与选择</a>
+            <a href="#contact-zh">联系方式</a>
+          </div>
+        </aside>
+
+        <article class="document-content">
+          <div class="lang-en">
+            <section id="overview-en" class="content-section">
+              <h2>1. Overview</h2>
+              <p>Better Excalidraw Workspace enhances the official <a href="https://excalidraw.com/">excalidraw.com</a> website with a local workspace, multi-canvas switching, autosave, and additional geometry tools.</p>
+              <div class="callout"><strong>Local-first by design.</strong> The extension does not collect, sell, rent, or transmit personal data or drawing content to a developer-operated server.</div>
+            </section>
+
+            <section id="local-data-en" class="content-section">
+              <h2>2. Information processed locally</h2>
+              <p>When you choose a workspace folder, the extension may read and write the following information on your computer to provide the features you request:</p>
+              <ul>
+                <li>Folder and file names inside the workspace you select.</li>
+                <li><code>.excalidraw</code> canvas content, including elements, app state, and embedded image data.</li>
+                <li>Excalidraw canvas data already stored by excalidraw.com in browser local storage or IndexedDB, when needed to save the active canvas.</li>
+                <li>The selected directory handle, stored in the extension's browser-local IndexedDB so the workspace can be reconnected.</li>
+                <li>Extension preferences, such as the autosave interval, stored in <code>chrome.storage.local</code>.</li>
+              </ul>
+              <p>The extension accesses only a folder you explicitly select through Chrome's directory picker. If that folder is managed by a third-party sync or backup service, that service may process files under its own terms; the extension does not initiate or control that service.</p>
+            </section>
+
+            <section id="permissions-en" class="content-section">
+              <h2>3. Chrome permissions</h2>
+              <div class="retention-grid">
+                <div class="retention-item"><strong><code>sidePanel</code></strong>Opens the workspace interface in Chrome's side panel.</div>
+                <div class="retention-item"><strong><code>storage</code></strong>Saves extension preferences locally in Chrome.</div>
+                <div class="retention-item"><strong><code>https://excalidraw.com/*</code></strong>Runs the extension only on the official Excalidraw website to load, capture, save, and enhance canvases.</div>
+                <div class="retention-item"><strong>Directory access</strong>Chrome asks you to choose and authorize a workspace folder. The extension cannot silently select an arbitrary folder.</div>
+              </div>
+              <p>The extension is packaged as a Manifest V3 extension and does not download or execute remote code.</p>
+            </section>
+
+            <section id="sharing-en" class="content-section">
+              <h2>4. Collection, sharing, and third parties</h2>
+              <p>The extension does not use analytics, advertising, tracking, telemetry, user accounts, or a developer backend. It does not sell or share user data for advertising, profiling, credit, or unrelated purposes.</p>
+              <p>Google Chrome provides the extension platform, local extension storage, side panel, and File System Access controls. The official Excalidraw website may separately process information under its own privacy terms. This policy covers only the Better Excalidraw Workspace extension.</p>
+              <p>If you voluntarily email the publisher for support or a privacy request, the email address, message, and attachments you provide are processed by the applicable email service only as needed to respond, keep an appropriate request record, protect the service, or comply with law.</p>
+            </section>
+
+            <section id="choices-en" class="content-section">
+              <h2>5. Retention, security, and your choices</h2>
+              <ul>
+                <li>Workspace files remain in the folder you selected until you edit or delete them.</li>
+                <li>The directory handle and extension preferences remain in browser-local storage until cleared by Chrome, reset by you, or removed when the extension is uninstalled, subject to browser and operating-system behavior.</li>
+                <li>You can revoke directory access through Chrome's site or permission controls and can uninstall the extension at any time.</li>
+              </ul>
+              <p>The extension relies on Chrome's permission model and keeps processing local where practical. No storage method is completely secure, so you should protect access to your device and workspace files and maintain backups appropriate for your needs.</p>
+              <p>The extension is a productivity tool and is not directed to children below the minimum digital-consent age in their region.</p>
+            </section>
+
+            <section id="contact-en" class="content-section">
+              <h2>6. Changes and contact</h2>
+              <p>This policy may be updated before a release if the extension's features, permissions, external services, or data practices change. The effective date above identifies the current version.</p>
+              <p>Questions and privacy requests: <a href="mailto:2290320152@qq.com?subject=Better%20Excalidraw%20Privacy">2290320152@qq.com</a></p>
+            </section>
+          </div>
+
+          <div class="lang-zh" lang="zh-Hans">
+            <section id="overview-zh" class="content-section">
+              <h2>1. 概述</h2>
+              <p>Better Excalidraw Workspace 为官方 <a href="https://excalidraw.com/">excalidraw.com</a> 网站提供本地工作区、多画布切换、自动保存和扩展几何图形功能。</p>
+              <div class="callout"><strong>本地优先。</strong>扩展不会收集、出售、出租个人数据，也不会将个人数据或绘图内容传输至开发者运营的服务器。</div>
+            </section>
+
+            <section id="local-data-zh" class="content-section">
+              <h2>2. 在本地处理的信息</h2>
+              <p>当您选择工作区目录后，为提供您主动使用的功能，扩展可能在您的电脑上读取和写入：</p>
+              <ul>
+                <li>您所选工作区内的目录名和文件名。</li>
+                <li><code>.excalidraw</code> 画布内容，包括元素、应用状态及内嵌图片数据。</li>
+                <li>在保存当前画布时，读取 excalidraw.com 已保存在浏览器 localStorage 或 IndexedDB 中的画布数据。</li>
+                <li>您选择的目录句柄；该句柄保存在扩展的浏览器本地 IndexedDB 中，以便重新连接工作区。</li>
+                <li>自动保存间隔等扩展偏好；这些设置保存在 <code>chrome.storage.local</code> 中。</li>
+              </ul>
+              <p>扩展仅访问您通过 Chrome 目录选择器明确选择的目录。如果该目录由第三方同步或备份服务管理，该服务可能依据自身条款处理文件；扩展不会主动启动或控制该服务。</p>
+            </section>
+
+            <section id="permissions-zh" class="content-section">
+              <h2>3. Chrome 权限用途</h2>
+              <div class="retention-grid">
+                <div class="retention-item"><strong><code>sidePanel</code></strong>在 Chrome 侧边栏中打开工作区界面。</div>
+                <div class="retention-item"><strong><code>storage</code></strong>在 Chrome 本地保存扩展偏好。</div>
+                <div class="retention-item"><strong><code>https://excalidraw.com/*</code></strong>仅在官方 Excalidraw 网站上加载、读取、保存和增强画布。</div>
+                <div class="retention-item"><strong>目录访问</strong>Chrome 会要求您选择并授权工作区目录，扩展不能静默选择任意目录。</div>
+              </div>
+              <p>扩展采用 Manifest V3 打包，不会下载或执行远程代码。</p>
+            </section>
+
+            <section id="sharing-zh" class="content-section">
+              <h2>4. 收集、共享与第三方</h2>
+              <p>扩展不使用分析、广告、追踪、遥测、用户账户或开发者后端，也不会为广告、画像、征信或无关目的出售或共享用户数据。</p>
+              <p>Google Chrome 提供扩展平台、本地扩展存储、侧边栏和文件系统访问控制；官方 Excalidraw 网站可能依据其自身隐私条款独立处理信息。本政策仅适用于 Better Excalidraw Workspace 扩展。</p>
+              <p>如果您主动向发布者发送支持或隐私请求邮件，您提供的邮箱地址、邮件正文和附件会由相应邮箱服务处理，并仅在回复请求、保留适当记录、保护服务或履行法律义务所需期间使用。</p>
+            </section>
+
+            <section id="choices-zh" class="content-section">
+              <h2>5. 保留、安全与您的选择</h2>
+              <ul>
+                <li>工作区文件保留在您选择的目录中，直到您自行修改或删除。</li>
+                <li>目录句柄和扩展偏好保留在浏览器本地存储中，直到 Chrome 清理、您主动重置或卸载扩展；实际行为可能受浏览器和操作系统机制影响。</li>
+                <li>您可以通过 Chrome 的网站或权限设置撤销目录访问，也可以随时卸载扩展。</li>
+              </ul>
+              <p>扩展依赖 Chrome 权限模型，并在可行范围内保持本地处理。任何存储方式都无法保证绝对安全，请妥善保护设备和工作区文件，并根据需要自行备份。</p>
+              <p>本扩展属于生产力工具，不面向低于所在地区最低数字同意年龄的儿童。</p>
+            </section>
+
+            <section id="contact-zh" class="content-section">
+              <h2>6. 更新与联系</h2>
+              <p>如果扩展功能、权限、外部服务或数据实践发生变化，本政策会在相应版本发布前更新。页面顶部日期代表当前版本。</p>
+              <p>问题及隐私请求：<a href="mailto:2290320152@qq.com?subject=Better%20Excalidraw%20Privacy">2290320152@qq.com</a></p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 MingHua Li（李明华）</span>
+        <div class="footer-links"><a href="/" data-keep-language>Legal Center</a><a href="/privacy/" data-keep-language>General Privacy</a><a href="mailto:2290320152@qq.com">2290320152@qq.com</a></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
