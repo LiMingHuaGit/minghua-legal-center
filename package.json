@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy",
-    "check": "wrangler deploy --dry-run"
+    "build": "node scripts/build.mjs",
+    "dev": "pnpm run build && wrangler dev",
+    "deploy": "pnpm run check && wrangler deploy",
+    "check": "pnpm run build && node scripts/validate.mjs && wrangler deploy --dry-run"
   },
   "devDependencies": {
     "wrangler": "4.156.0"

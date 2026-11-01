@@ -5,19 +5,23 @@ Standalone static bilingual legal and support site for all personal products pub
 Publisher: MingHua Li（李明华），independent developer
 Contact: `2290320152@qq.com`
 
-Production routes:
+Production information architecture:
 
-- `https://legal.liminghua.fyi/` — legal center index
-- `https://legal.liminghua.fyi/privacy/` — reusable privacy core and PushUp Pilot disclosure
-- `https://legal.liminghua.fyi/support/` — PushUp Pilot support
-- `https://legal.liminghua.fyi/products/better-excalidraw/privacy/` — Better Excalidraw Workspace privacy policy
+- `/` — product compliance directory
+- `/privacy/` — shared privacy principles and product-policy index
+- `/support/` — shared contact guidance and product-support directory
+- `/products/<slug>/` — product identity, facts, and actual data boundaries
+- `/products/<slug>/privacy/` — product-specific privacy policy
+- `/products/<slug>/support/` — product-specific support and FAQ
+
+Current products are PushUp Pilot, Better Excalidraw Workspace, and BetterMeAndCat.
 
 The site has no external runtime, font, analytics, or CDN dependency. `public/_headers` applies restrictive security headers. The language switch uses the `lang` query parameter and keeps both English and Simplified Chinese text in the source HTML.
 
 ## Production deployment
 
 - Cloudflare Worker: `legal-liminghua-fyi`
-- Deployed version: `93732f6b-7293-4e76-841e-6164a5b76ee9`
+- Deployed version: `2e10fadb-305a-4c77-8fc4-49f0a34aa9da`
 - Custom domain: `legal.liminghua.fyi`
 - `workers_dev`: disabled
 - Preview URLs: disabled
@@ -36,10 +40,19 @@ pnpm check
 pnpm run deploy
 ```
 
+## Source and generated output
+
+- `src/content.mjs` is the single content registry for shared policy text and every product.
+- `src/render.mjs` owns reusable page structures.
+- `src/styles.css` and `src/site.js` are shared by all routes.
+- `scripts/build.mjs` regenerates the complete `public/` directory.
+- `scripts/validate.mjs` checks route and asset completeness.
+
+Do not hand-edit generated files under `public/`.
+
 ## Adding another product
 
-1. Add the product to the bilingual product directory in `public/index.html`.
-2. Create a stable product route under `public/products/<product-slug>/privacy/index.html`.
-3. Keep general publisher terms in `public/privacy/index.html`; put product-specific permissions, data flows, retention, and third parties on the product route.
-4. Run `pnpm check`, verify English and Chinese at desktop and mobile sizes, then run `pnpm run deploy`.
-5. Update this README with the new production route and deployed version.
+1. Add one bilingual product object to `src/content.mjs`, including summary, facts, boundaries, privacy sections, and support FAQs.
+2. Keep shared publisher principles in `generalPrivacy`; put actual permissions, data flows, retention, deletion, and providers in the product object.
+3. Run `pnpm check`, verify English and Chinese at desktop and mobile sizes, then run `pnpm run deploy`.
+4. Update the product list and deployed version in this README.

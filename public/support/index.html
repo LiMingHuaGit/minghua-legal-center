@@ -3,226 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PushUp Pilot setup, purchase, leaderboard, Photos, and data-request support from MingHua Li.">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="data:,">
-  <link rel="canonical" href="https://legal.liminghua.fyi/support/">
+  <meta name="description" content="Unified product support and contact directory.">
+  <meta name="color-scheme" content="light">
+  <title>Support Directory · MingHua Legal Center</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="/site.js" defer></script>
-  <title>PushUp Pilot Support — MingHua Li</title>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content / 跳到正文</a>
+  <a class="skip-link" href="#main"><span class="lang-en " lang="en">Skip to content</span><span class="lang-zh " lang="zh-Hans">跳到正文</span></a>
   <div class="site-shell">
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="/" data-keep-language>MingHua Li · Legal Center</a>
-        <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="/privacy/" data-keep-language>Privacy</a>
-          <a href="/support/" aria-current="page" data-keep-language>Support</a>
-          <div class="language-switch" role="group" aria-label="Language / 语言">
-            <button type="button" data-language-choice="en" aria-pressed="true">EN</button><span class="language-separator" aria-hidden="true">/</span><button type="button" data-language-choice="zh" aria-pressed="false">中文</button>
+        <a class="brand" data-keep-language href="/">MingHua <span>Legal Center</span></a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a data-keep-language  href="/privacy/"><span class="lang-en " lang="en">Privacy</span><span class="lang-zh " lang="zh-Hans">隐私</span></a>
+          <a data-keep-language aria-current="page" href="/support/"><span class="lang-en " lang="en">Support</span><span class="lang-zh " lang="zh-Hans">支持</span></a>
+          <div class="language-switch" aria-label="Language">
+            <button type="button" data-language-choice="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-language-choice="zh" aria-pressed="false">中文</button>
           </div>
         </nav>
         <details class="mobile-menu">
-          <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
-          <nav class="mobile-menu-panel" aria-label="Mobile navigation">
-            <a href="/privacy/" data-keep-language>Privacy / 隐私政策</a>
-            <a href="/support/" aria-current="page" data-keep-language>Support / 支持</a>
-            <div class="language-switch" role="group" aria-label="Language / 语言">
-              <button type="button" data-language-choice="en" aria-pressed="true">EN</button><span class="language-separator" aria-hidden="true">/</span><button type="button" data-language-choice="zh" aria-pressed="false">中文</button>
-            </div>
-          </nav>
+          <summary aria-label="Open navigation"><span class="menu-icon"></span></summary>
+          <div class="mobile-menu-panel">
+            <a data-keep-language href="/privacy/"><span class="lang-en " lang="en">Privacy</span><span class="lang-zh " lang="zh-Hans">隐私</span></a>
+            <a data-keep-language href="/support/"><span class="lang-en " lang="en">Support</span><span class="lang-zh " lang="zh-Hans">支持</span></a>
+            <div class="language-switch"><button type="button" data-language-choice="en">EN</button><span>/</span><button type="button" data-language-choice="zh">中文</button></div>
+          </div>
         </details>
       </div>
+
     </header>
-
-    <main id="main" class="page-main support-main" tabindex="-1">
-      <div class="lang-en">
-        <h1>PushUp Pilot Support</h1>
-        <a class="support-contact" href="mailto:2290320152@qq.com">
-          <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.7 6.4 12 13l8.3-6.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-          <span>2290320152@qq.com</span>
-        </a>
-        <nav class="topic-nav" aria-label="Support topics">
-          <a href="#quick-start-en">Quick start</a><a href="#purchase-en">Purchases &amp; restore</a><a href="#leaderboard-en">Global leaderboard</a><a href="#data-en">Data requests</a>
-        </nav>
-
-        <section id="quick-start-en" class="support-section">
-          <h2>Quick start and exercise safety</h2>
-          <ol>
-            <li>Secure the iPhone in portrait orientation with your upper body and hands visible.</li>
-            <li>Allow Camera access and create or select a local player.</li>
-            <li>Tap <strong>START</strong>, complete calibration, or use <strong>SKIP CALIBRATION</strong> for adaptive tracking.</li>
-            <li>Move your body up to fly higher and down to descend while completing push-ups.</li>
-          </ol>
-          <div class="callout">PushUp Pilot is a fitness game, not medical advice or a health-measurement tool. Keep the device stable, leave clear space, exercise within your ability, and stop if you feel pain, dizziness, or discomfort.</div>
-        </section>
-
-        <section class="support-section">
-          <h2>Camera and motion troubleshooting</h2>
-          <ul>
-            <li>Open iOS <strong>Settings &gt; Privacy &amp; Security &gt; Camera</strong> and allow PushUp Pilot.</li>
-            <li>Use even front lighting, avoid strong backlight, and keep shoulders, arms, and hands inside the frame.</li>
-            <li>Keep the phone stable in portrait orientation.</li>
-            <li>Recalibrate after changing distance, lighting, or body position. Use quick recalibration or <strong>SKIP CALIBRATION</strong> if a saved profile no longer fits.</li>
-            <li>Restart the app after changing permissions.</li>
-          </ul>
-          <p>Camera frames and pose landmarks are processed on the iPhone and are not uploaded to the PushUp Pilot Cloudflare service.</p>
-        </section>
-
-        <section class="support-section">
-          <h2>Local players, records, and deletion</h2>
-          <p>Local names and avatar images stay on the iPhone and are not published on the global leaderboard. Creating a player does register its random UUID with the online service, which creates a non-editable <code>Pilot-...</code> alias.</p>
-          <p>Deleting a player removes that local profile and its calibration data. Earlier Records keep their saved name and avatar snapshots until you open <strong>RECORDS</strong> and use <strong>CLEAR</strong>. Photos and videos already saved to Photos must be deleted in Photos.</p>
-          <p>PushUp Pilot does not provide an authenticated online account, so there is no in-app account-deletion flow. Cloudflare leaderboard records are handled separately under Data requests.</p>
-        </section>
-
-        <section id="leaderboard-en" class="support-section">
-          <h2>Global leaderboard and Game Center</h2>
-          <ul>
-            <li>The global leaderboard requires access to <code>https://youcanfly-api.liminghua.fyi</code>.</li>
-            <li>Only eligible standard records can upload. Manual-control and detected knee-support records are excluded.</li>
-            <li>Free users can manually complete one successful upload per player UUID per UTC week, starting Monday at 00:00 UTC. Failed, rejected, duplicate, or rolled-back attempts do not consume it.</li>
-            <li>Lifetime Pro queues eligible standard scores for automatic upload after StoreKit entitlement verification.</li>
-            <li>Public entries show numeric results and an automatic alias. Local names and avatars are not uploaded.</li>
-          </ul>
-          <p>There is no public user-authored text, image, audio, messaging, chat, or post feature, so reporting and blocking are not applicable. Opening the leaderboard sends the selected player UUID to the service. Local gameplay and local records remain available if the online service is unavailable.</p>
-          <p>PushUp Pilot asks Apple Game Center to authenticate at launch. When authenticated, eligible best scores and milestone achievements submit automatically to Apple. Game Center records are managed by Apple and are separate from the Cloudflare leaderboard.</p>
-        </section>
-
-        <section id="purchase-en" class="support-section">
-          <h2>Lifetime Pro purchase, offer code, and restore</h2>
-          <p>Lifetime Pro is a one-time, non-consumable Apple in-app purchase with product ID <code>com.minghua.pushupbird.lifetimepro</code>. It is not a subscription. It unlocks Space, Raceway, and Stadium themes and characters, unlimited eligible score uploads, and monthly and yearly training analytics. Ocean and core gameplay remain free.</p>
-          <p>If the product or price does not load:</p>
-          <ul>
-            <li>Confirm the device is signed in to the App Store and in-app purchases are allowed.</li>
-            <li>Check the network connection and Apple System Status.</li>
-            <li>Confirm the storefront supports the product, then restart the app and reopen <strong>SETTINGS &gt; LIFETIME PRO</strong>.</li>
-            <li>For a testing build, confirm the intended Sandbox tester is in use and that the in-app purchase has been submitted with the app version in App Store Connect.</li>
-          </ul>
-          <p><strong>The app has no offer-code text field.</strong> Redeem a code through Apple's App Store redemption interface or the one-time redemption link supplied with the code. Reopen PushUp Pilot, then use <strong>SETTINGS &gt; LIFETIME PRO &gt; RESTORE PURCHASES</strong> if the entitlement does not refresh automatically.</p>
-          <p>For billing or refunds, use <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. Prices, currency, taxes, and availability vary by region. The app does not accept external payment.</p>
-        </section>
-
-        <section class="support-section">
-          <h2>Replay videos, report images, and Photos</h2>
-          <p>Gameplay recording is off by default. When enabled with add-only Photos permission, ReplayKit records completed challenge runs without microphone audio and saves them to Photos. Interrupted or cancelled runs may not create a saved video.</p>
-          <p>Lifetime Pro analytics creates a report image only when you choose the save action. Replay videos and report images are not uploaded to the PushUp Pilot Cloudflare service.</p>
-          <p>If saving fails, allow PushUp Pilot under iOS <strong>Settings &gt; Privacy &amp; Security &gt; Photos</strong>, confirm free storage, and restart the app after changing permissions.</p>
-        </section>
-
-        <section id="data-en" class="support-section">
-          <h2>Data requests</h2>
-          <p>Deleting the app or a local player does not automatically remove Cloudflare leaderboard records, Game Center records, Apple purchase history, or media already saved to Photos.</p>
-          <p>Email <a href="mailto:2290320152@qq.com?subject=PushUp%20Pilot%20Data%20Request">2290320152@qq.com</a> with subject <code>PushUp Pilot Data Request</code>, your automatic alias or player UUID, country or region, and the specific request.</p>
-          <p>The service has no account login, and public aliases or UUIDs alone do not prove ownership. We will acknowledge the request within 5 business days and explain whether other limited evidence can reasonably verify control. We cannot promise deletion where control cannot reasonably be verified. Valid requests are handled as required by applicable law. Deleted D1 data may remain recoverable for up to 7 days in Cloudflare D1 Time Travel under the current Free plan.</p>
-          <p>Use Apple's controls for Game Center and purchase history. Use Photos to delete saved videos or images.</p>
-        </section>
-
-        <section class="support-section">
-          <h2>Contact support</h2>
-          <p>Email <a href="mailto:2290320152@qq.com">2290320152@qq.com</a>. Response target: within 5 business days.</p>
-          <p>Include the app version and build, iPhone model and iOS version, app language and App Store region, the screen involved, exact error text, reproduction steps, and whether it occurs on Wi-Fi, cellular, or both. Redact Apple ID, purchase details, local names, UUIDs, and personal photos unless specifically needed.</p>
-        </section>
-      </div>
-
-      <div class="lang-zh" lang="zh-Hans">
-        <h1>PushUp Pilot 支持</h1>
-        <a class="support-contact" href="mailto:2290320152@qq.com">
-          <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.7 6.4 12 13l8.3-6.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-          <span>2290320152@qq.com</span>
-        </a>
-        <nav class="topic-nav" aria-label="支持主题">
-          <a href="#quick-start-zh">快速开始</a><a href="#purchase-zh">购买与恢复</a><a href="#leaderboard-zh">全球排行榜</a><a href="#data-zh">数据请求</a>
-        </nav>
-
-        <section id="quick-start-zh" class="support-section">
-          <h2>快速开始与运动安全</h2>
-          <ol>
-            <li>将 iPhone 以竖屏方式稳定放置，确保画面能看到您的上半身和双手。</li>
-            <li>允许相机权限，并创建或选择一个本地玩家。</li>
-            <li>点击 <strong>START</strong>，完成校准；也可以选择 <strong>SKIP CALIBRATION</strong> 使用自适应追踪。</li>
-            <li>做俯卧撑时通过身体上下移动控制角色升降。</li>
-          </ol>
-          <div class="callout">PushUp Pilot 是健身游戏，不属于医疗建议或健康测量工具。请固定好设备、清理周围空间、量力运动；如出现疼痛、眩晕或不适，请立即停止。</div>
-        </section>
-
-        <section class="support-section">
-          <h2>相机与动作控制排查</h2>
-          <ul>
-            <li>打开 iOS <strong>设置 &gt; 隐私与安全性 &gt; 相机</strong>，允许 PushUp Pilot 使用相机。</li>
-            <li>使用均匀正面光线，避免强烈逆光，保持肩膀、手臂和双手位于画面内。</li>
-            <li>将手机以竖屏方式稳定放置。</li>
-            <li>改变距离、光线或身体位置后重新校准；如已保存校准不再适用，请使用快速重新校准或 <strong>SKIP CALIBRATION</strong>。</li>
-            <li>修改权限后重启 App。</li>
-          </ul>
-          <p>相机画面和姿态关键点只在 iPhone 本地处理，不会上传到 PushUp Pilot 的 Cloudflare 服务。</p>
-        </section>
-
-        <section class="support-section">
-          <h2>本地玩家、记录与删除</h2>
-          <p>本地玩家名称和头像保存在 iPhone 上，不会发布到全球排行榜。创建玩家时会向在线服务登记随机 UUID，服务据此生成不可编辑的 <code>Pilot-...</code> 公开别名。</p>
-          <p>删除玩家会移除该本地档案及校准数据。以往“记录”中保存的名称和头像快照仍会保留，直到您打开 <strong>记录</strong> 并使用 <strong>清空</strong>。已经保存到系统相册的图片和视频需要在“照片”中删除。</p>
-          <p>PushUp Pilot 不提供经过身份验证的在线账户，因此没有 App 内账户删除流程。Cloudflare 排行榜数据按“数据请求”单独处理。</p>
-        </section>
-
-        <section id="leaderboard-zh" class="support-section">
-          <h2>全球排行榜与 Game Center</h2>
-          <ul>
-            <li>全球排行榜需要访问 <code>https://youcanfly-api.liminghua.fyi</code>。</li>
-            <li>只有符合条件的标准记录可以上传。使用手动控制或检测到膝盖支撑的记录不会进入排行榜。</li>
-            <li>免费用户每个玩家 UUID 每个 UTC 周可手动成功上传一次，周期从周一 00:00 UTC 开始。失败、被拒绝、重复或回滚的请求不会消耗次数。</li>
-            <li>Lifetime Pro 在 StoreKit 权益验证后会把符合条件的标准分数加入自动上传队列。</li>
-            <li>公开内容只显示数字结果和自动别名；本地名称和头像不会上传。</li>
-          </ul>
-          <p>服务没有用户编写的公开文字、图片、音频、私信、聊天或帖子，因此举报和屏蔽功能不适用。打开排行榜会将所选玩家 UUID 发送给服务。在线服务不可用时，本地游戏与本地记录仍可使用。</p>
-          <p>PushUp Pilot 启动时会请求 Apple Game Center 进行身份验证。登录后，符合条件的最佳分数和里程碑成就会自动提交给 Apple。Game Center 记录由 Apple 管理，与 Cloudflare 排行榜相互独立。</p>
-        </section>
-
-        <section id="purchase-zh" class="support-section">
-          <h2>Lifetime Pro 购买、优惠代码与恢复</h2>
-          <p>Lifetime Pro 是一次性非消耗型 Apple App 内购买，产品 ID 为 <code>com.minghua.pushupbird.lifetimepro</code>，不是订阅。购买后永久解锁太空、赛车和体育场主题及角色，无限上传符合条件的分数，以及月度和年度训练统计。海洋主题和核心游戏保持免费。</p>
-          <p>如商品或价格无法加载：</p>
-          <ul>
-            <li>确认设备已登录 App Store，且允许 App 内购买。</li>
-            <li>检查网络连接和 Apple 系统状态。</li>
-            <li>确认当前 App Store 地区支持商品，然后重启 App 并重新打开 <strong>设置 &gt; LIFETIME PRO</strong>。</li>
-            <li>测试构建还需确认设备使用正确的 Sandbox 测试账号，并且该 App 内购买项目已在 App Store Connect 中随 App 版本提交。</li>
-          </ul>
-          <p><strong>App 内没有输入优惠代码的文本框。</strong>请使用 Apple 的 App Store 兑换界面，或优惠代码附带的一次性兑换链接进行兑换。随后重新打开 PushUp Pilot；如权益未自动刷新，请使用 <strong>设置 &gt; LIFETIME PRO &gt; 恢复购买</strong>。</p>
-          <p>账单或退款问题请前往 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>。价格、货币、税费和可用性因地区而异；App 不接受外部付款。</p>
-        </section>
-
-        <section class="support-section">
-          <h2>回放视频、报告图片与系统相册</h2>
-          <p>游戏录像默认关闭。开启录像并授予仅添加照片权限后，ReplayKit 会录制完成的挑战，不包含麦克风音频，并保存到系统相册。中断或取消的对局可能不会生成视频。</p>
-          <p>Lifetime Pro 训练统计仅在您主动点击保存时生成报告图片。回放视频和报告图片不会上传至 PushUp Pilot 的 Cloudflare 服务。</p>
-          <p>如保存失败，请在 iOS <strong>设置 &gt; 隐私与安全性 &gt; 照片</strong> 中允许 PushUp Pilot 添加媒体，确认设备有足够存储空间，并在修改权限后重启 App。</p>
-        </section>
-
-        <section id="data-zh" class="support-section">
-          <h2>数据请求</h2>
-          <p>删除 App 或本地玩家不会自动移除 Cloudflare 排行榜数据、Game Center 记录、Apple 购买历史或已经保存到系统相册的媒体。</p>
-          <p>请发送邮件至 <a href="mailto:2290320152@qq.com?subject=PushUp%20Pilot%20Data%20Request">2290320152@qq.com</a>，主题写明 <code>PushUp Pilot Data Request</code>，并提供自动别名或玩家 UUID、所在国家或地区及具体请求。</p>
-          <p>服务没有账户登录，公开别名或 UUID 本身不能证明所有权。我们将在 5 个工作日内确认收到请求，并说明是否存在可合理验证控制权的其他有限信息。在无法合理验证控制权时，我们无法承诺删除。有效请求将依适用法律处理。当前 Cloudflare Free 套餐下，删除后的 D1 数据仍可能在 D1 Time Travel 中保留最多 7 天的可恢复状态。</p>
-          <p>Game Center 和购买历史相关请求请使用 Apple 的控制工具；已保存的视频或图片请在“照片”中删除。</p>
-        </section>
-
-        <section class="support-section">
-          <h2>联系支持</h2>
-          <p>请发送邮件至 <a href="mailto:2290320152@qq.com">2290320152@qq.com</a>。回复目标为 5 个工作日内。</p>
-          <p>请尽量提供 App 版本与构建号、iPhone 型号与 iOS 版本、App 语言与 App Store 地区、相关页面、完整错误文本、复现步骤，以及问题是否同时发生在 Wi-Fi 和蜂窝网络。除非处理请求确有需要，请遮盖 Apple ID、购买详情、本地名称、UUID 和个人照片。</p>
-        </section>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span>© 2026 MingHua Li（李明华） · Response target: 5 business days</span>
-        <div class="footer-links"><a href="/" data-keep-language>Legal Center</a><a href="/privacy/" data-keep-language>Privacy</a><a href="mailto:2290320152@qq.com">2290320152@qq.com</a></div>
-      </div>
-    </footer>
+    <main id="main" class="page-main" tabindex="-1"><div class="document-shell"><header class="document-hero"><p class="eyebrow"><span class="lang-en " lang="en">One support entrance</span><span class="lang-zh " lang="zh-Hans">统一支持入口</span></p><h1><span class="lang-en " lang="en">Support for every product</span><span class="lang-zh " lang="zh-Hans">所有产品的支持入口</span></h1><p><span class="lang-en " lang="en">Choose a product for focused setup, purchase, data, and troubleshooting guidance.</span><span class="lang-zh " lang="zh-Hans">选择产品，查看对应的设置、购买、数据与故障处理说明。</span></p></header><section class="support-directory"><div class="product-ledger">
+  <article class="product-row">
+    <a class="row-main" data-keep-language href="/products/pushup-pilot/" aria-label="PushUp Pilot">
+      <span class="row-index">01</span>
+      <span class="row-copy"><strong>PushUp Pilot</strong><span class="lang-en row-kind" lang="en">Camera-controlled fitness arcade game</span><span class="lang-zh row-kind" lang="zh-Hans">相机动作控制健身街机游戏</span></span>
+      <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="row-actions">
+      <a data-keep-language href="/products/pushup-pilot/privacy/"><span class="lang-en " lang="en">Privacy</span><span class="lang-zh " lang="zh-Hans">隐私</span></a>
+      <a data-keep-language href="/products/pushup-pilot/support/"><span class="lang-en " lang="en">Support</span><span class="lang-zh " lang="zh-Hans">支持</span></a>
+    </div>
+  </article><article class="product-row">
+    <a class="row-main" data-keep-language href="/products/better-excalidraw/" aria-label="Better Excalidraw Workspace">
+      <span class="row-index">02</span>
+      <span class="row-copy"><strong>Better Excalidraw Workspace</strong><span class="lang-en row-kind" lang="en">Local workspace for excalidraw.com</span><span class="lang-zh row-kind" lang="zh-Hans">excalidraw.com 本地工作区</span></span>
+      <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="row-actions">
+      <a data-keep-language href="/products/better-excalidraw/privacy/"><span class="lang-en " lang="en">Privacy</span><span class="lang-zh " lang="zh-Hans">隐私</span></a>
+      <a data-keep-language href="/products/better-excalidraw/support/"><span class="lang-en " lang="en">Support</span><span class="lang-zh " lang="zh-Hans">支持</span></a>
+    </div>
+  </article><article class="product-row">
+    <a class="row-main" data-keep-language href="/products/better-me-and-cat/" aria-label="BetterMeAndCat">
+      <span class="row-index">03</span>
+      <span class="row-copy"><strong>BetterMeAndCat</strong><span class="lang-en row-kind" lang="en">Habit, focus, and virtual cat companion</span><span class="lang-zh row-kind" lang="zh-Hans">习惯、专注与虚拟猫咪陪伴</span></span>
+      <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="row-actions">
+      <a data-keep-language href="/products/better-me-and-cat/privacy/"><span class="lang-en " lang="en">Privacy</span><span class="lang-zh " lang="zh-Hans">隐私</span></a>
+      <a data-keep-language href="/products/better-me-and-cat/support/"><span class="lang-en " lang="en">Support</span><span class="lang-zh " lang="zh-Hans">支持</span></a>
+    </div>
+  </article>
+</div></section><section class="contact-band"><div><p class="eyebrow"><span class="lang-en " lang="en">Contact the developer</span><span class="lang-zh " lang="zh-Hans">联系开发者</span></p><p><span class="lang-en " lang="en">Include the product name, version, device and operating-system version, what you expected, what happened, and steps to reproduce. Remove passwords, payment details, private content or personal records, and unrelated personal information from screenshots or attachments.</span><span class="lang-zh " lang="zh-Hans">请注明产品名称、版本、设备与操作系统版本、预期结果、实际现象及复现步骤。发送截图或附件前，请移除密码、付款信息、私密内容或个人记录及无关个人信息。</span></p></div><a class="button-link" href="mailto:2290320152@qq.com?subject=Product%20Support"><span class="lang-en " lang="en">Email support</span><span class="lang-zh " lang="zh-Hans">发送支持邮件</span><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></section></div></main>
+    <footer class="site-footer"><div><span>© 2026 MingHua Li（李明华）</span><a href="mailto:2290320152@qq.com">2290320152@qq.com</a></div></footer>
   </div>
 </body>
 </html>
